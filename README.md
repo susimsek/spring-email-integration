@@ -1,5 +1,5 @@
 # Spring Boot Email Listener
-This is rabbitmq queue example using go language.
+This is email listener example using spring boot.
 
 <img src="https://github.com/susimsek/spring-email-integration/blob/master/images/gmail.png" alt="Spring Boot Gmail Listener" width="50%" height="50%"/> 
 
