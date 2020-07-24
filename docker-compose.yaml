@@ -1,0 +1,17 @@
+version: "3"
+services:
+  email-listener:
+    build: .
+    container_name: email-listener
+    restart: ${RESTART_POLICY}
+    environment:
+      - MAIL_STORE_PROTOCOL
+      - MAIL_IMAP_HOST
+      - MAIL_IMAP_PORT
+      - MAIL_IMAP_USERNAME
+      - MAIL_IMAP_PASSWORD
+      - MAIL_IMAP_SOCKET_FACTORY_CLASS
+      - MAIL_IMAP_SOCKET_FACTORY_FALLBACK
+      - MAIL_DEBUG
+    ports:
+      - 8080:8080
